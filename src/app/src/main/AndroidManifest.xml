@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wakeapp.gigsfinder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="replace" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name="com.wakeapp.gigsfinder.Nokri_Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.wakeapp.gigsfinder.LinkedIn.LinkedInAuthenticationActivity"/>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.wakeapp.gigsfinder.activities.Nokri_LinkedinProfileActivity" />
+        <activity android:name="com.wakeapp.gigsfinder.activities.Nokri_LinkedInActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:exported="true"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider> <!-- Declare this activity in your AndroidManfest.xml -->
+        <activity
+            android:name="com.wakeapp.gigsfinder.activities.Nokri_MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wakeapp.gigsfinder.activities.Nokri_SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wakeapp.gigsfinder.activities.Nokri_SigninActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity
+            android:name="com.wakeapp.gigsfinder.activities.Nokri_SignupActivity"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name="com.wakeapp.gigsfinder.activities.Nokri_ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wakeapp.gigsfinder.candidate.dashboard.Nokri_CandidateDashboardActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_API_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wakeapp.gigsfinder.employeer.dashboard.Nokri_EmployeerDashboardActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.wakeapp.gigsfinder.manager.download.manager.service.Nokri_DownloadService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.wakeapp.gigsfinder.activities.Nokri_ImagePreview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wakeapp.gigsfinder.guest.dashboard.Nokri_GuestDashboardActivity"
+            android:screenOrientation="portrait" /> <!-- Google Analytcis -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver> <!-- Network receiver -->
+        <receiver
+            android:name="com.wakeapp.gigsfinder.manager.receiver.Nokri_NetwordStateManager"
+            android:label="com.wakeapp.gigsfinder.manager.receiver.Nokri_NetwordStateManager">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver> <!-- Network receiver -->
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" /> <!-- Google Analytics -->
+        <!-- Firebase Notifications -->
+        <service android:name="com.wakeapp.gigsfinder.manager.notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.wakeapp.gigsfinder.manager.notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <!-- Paypal -->
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" /> <!-- Paypal -->
+        <activity
+            android:name="com.wakeapp.gigsfinder.manager.activities.Nokri_NoIternetDialogueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wakeapp.gigsfinder.employeer.payment.activities.Nokri_ThankYouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wakeapp.gigsfinder.employeer.payment.activities.Nokri_StripePaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wakeapp.gigsfinder.employeer.payment.activities.Nokri_InAppPurchaseActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.wakeapp.gigsfinder.employeer.email.fragments.Nokri_AddEmailTemplateFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <RelativeLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/app_blue"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/white"
+
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_add_more"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/edit_margin_top"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/edit_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittxt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/edit_text_size"
+                    android:theme="@style/ThemeEditprofile" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/edit_margin_top"
+
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/edit_text_size"
+                    android:textStyle="bold"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edittxt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/edit_text_size"
+                    android:theme="@style/ThemeEditprofile" />
+
+                <TextView
+                    android:id="@+id/txt_for"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/edit_margin_top"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/edit_text_size"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeSpinnerBlue"></Spinner>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_margin_top"
+                    android:orientation="vertical">
+                    />
+
+                    <TextView
+                        android:id="@+id/txt_about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+
+                        android:layout_marginTop="@dimen/edit_margin_top"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/edit_text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_bold"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/bold" />
+
+                        <ImageView
+                            android:id="@+id/img_italic"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+
+                            android:background="@drawable/italic" />
+
+                        <ImageView
+                            android:id="@+id/img_underline"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+
+                            android:background="@drawable/underline" />
+
+                        <ImageView
+                            android:id="@+id/img_num_bullets"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="5dp"
+
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bullet_num" />
+
+                        <ImageView
+                            android:id="@+id/img_list_bullets"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="5dp"
+
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bullet_list" />
+
+
+                    </LinearLayout>
+
+                    <jp.wasabeef.richeditor.RichEditor
+                        android:id="@+id/edittxt_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:theme="@style/ThemeSpinnerBlue" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black">
+
+                    </View>
+
+                    <Button
+                        android:id="@+id/btn_savetemplate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/edit_button_height"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_button_with_border"
+                        android:drawableRight="@drawable/forward_arrow"
+                        android:padding="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/app_blue" />
+
+                </LinearLayout>
+
+
+                <!--end-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

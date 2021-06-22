@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wakeapp.gigsfinder.candidate.profile.fragments.Nokri_CompanyPublicProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/private_container">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/txt_message"
+            android:textColor="@color/edit_profile_grey"
+            />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_container"
+
+            >
+
+
+
+
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                android:id="@+id/img_profile"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/container1"
+                android:layout_below="@+id/img_profile"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/txt_name"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textSize="10sp"
+                    android:id="@+id/txt_address"
+                   />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/socail_container">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/facebook"
+                        android:id="@+id/img_facebook"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/twitter"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/img_twitter"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_instagram"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+
+                        android:id="@+id/img_gooogle_plus"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/linkedin"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+
+                        android:id="@+id/img_linkedin"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_following"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/app_blue"
+
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_button"/>
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_message"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+
+                        android:backgroundTint="@color/white"
+                        android:text="Message"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:textColor="@color/app_blue"
+                        android:background="@drawable/rounded_button_with_border"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingEnd="0dp"
+                app:tabIndicatorColor="@color/app_blue"
+
+                android:background="@drawable/image_border"
+                android:layout_below="@+id/container1"
+                app:tabGravity="center"/>
+
+            <com.wakeapp.gigsfinder.custom.DynamicHeightViewPager
+                android:id="@+id/viewpager"
+                android:layout_below="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

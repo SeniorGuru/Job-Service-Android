@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+
+    tools:context="com.wakeapp.gigsfinder.candidate.profile.fragments.Nokri_CompanyDetailFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_company_info"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:text="Some Line About Our Company"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_company_info"
+        android:textColor="@color/grey"
+        android:lineSpacingExtra="3dp"
+        android:id="@+id/txt_company_info_data"
+        android:layout_marginTop="10dp"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/txt_profile_detail"
+        android:text="Profile Detail"
+        android:layout_marginTop="10dp"
+       android:layout_below="@+id/txt_company_info_data" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_profile_detail"
+        android:layout_marginTop="5dp"
+        android:id="@+id/profile_detail_recyclerview"></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/profile_detail_recyclerview"
+        android:id="@+id/container1"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           android:layout_marginTop="15dp"
+          >
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_contact"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="Get In Touch With Us:"/>
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_gravity="left"
+                android:background="@color/black"
+                android:layout_marginTop="2dp"></View>
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edit_text_size"
+                android:theme="@style/ThemeSpinnerBlue"
+                android:hint="Name"
+                android:textColor="@color/edit_profile_grey"
+                android:id="@+id/edittxt_name"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:textAlignment="viewStart"
+                android:layout_gravity="start"
+
+                />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/edit_text_size"
+                    android:hint="Email"
+                    android:textColor="@color/edit_profile_grey"
+                    android:layout_marginTop="@dimen/edit_margin_top"
+                    android:id="@+id/edittxt_email"
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="start"
+
+                    />
+
+
+
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/edit_text_size"
+                    android:textColor="@color/edit_profile_grey"
+                    android:hint="Subject"
+                    android:id="@+id/edittxt_subject"
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:layout_marginTop="@dimen/edit_margin_top"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="start"
+
+                    />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edit_text_size"
+                android:hint="Message"
+                android:textColor="@color/edit_profile_grey"
+                android:id="@+id/edittxt_message"
+                android:theme="@style/ThemeSpinnerBlue"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:textAlignment="viewStart"
+                android:layout_gravity="start"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|start"
+
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:text="Send Message"
+                android:id="@+id/btn_message"
+                android:textAllCaps="false"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

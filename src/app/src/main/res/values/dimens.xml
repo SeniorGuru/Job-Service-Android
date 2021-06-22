@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="rich_text_size">6sp</dimen>
+    <dimen name="saved_jobs_popup_height">180dp</dimen>
+
+    <dimen name="edit_text_size">12sp</dimen>
+    <dimen name="edit_textview_size">11sp</dimen>
+    <dimen name="edit_margin_top">10dp</dimen>
+    <dimen name="richeditor_font_size">8sp</dimen>
+    <dimen name="edit_button_height">40dp</dimen>
+
+    <dimen name="social_icon_size">25dp</dimen>
+    <dimen name="rich_editor_icon_size">20dp</dimen>
+    <dimen tools:override="true" name="design_navigation_icon_padding">15dp</dimen>
+    <dimen tools:override="true" name="design_navigation_icon_size">18dp</dimen>
+
+    <dimen name="heading_text_size">16sp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding">0dp</dimen>
+
+</resources>

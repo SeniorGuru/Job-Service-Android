@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "929384508220",
+    "firebase_url": "https://gigs-finder.firebaseio.com",
+    "project_id": "gigs-finder",
+    "storage_bucket": "gigs-finder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929384508220:android:c20ace85dd1f97ad020c39",
+        "android_client_info": {
+          "package_name": "com.wakeapp.gigsfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929384508220-qdd10n37u8fkjkmiglqf1ud34vuk2ebj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wakeapp.gigsfinder",
+            "certificate_hash": "5ef22cd84fdd891854b886f06fd90fc5122ad0cf"
+          }
+        },
+        {
+          "client_id": "929384508220-jna6r6m0g6ec9sp8rb64oq9jq2i3cr52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsYFY3PjcPAhNvUjTNyK9FRtOtTBGt7kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929384508220-jna6r6m0g6ec9sp8rb64oq9jq2i3cr52.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "929384508220-lm9u929t3rg459bb83mdt81tnf3str4e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wakeapp.gigs"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

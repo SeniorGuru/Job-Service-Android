@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wakeapp.gigsfinder.employeer.jobs.fragments.Nokri_ResumeReceivedFragment">
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeSpinnerBlue"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+
+        android:layout_marginTop="5dp"></Spinner>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:id="@+id/container"
+        android:padding="5dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/dark_grey"
+        android:textSize="11sp"
+        android:background="@drawable/rectangle_faq"
+        android:id="@+id/edittxt_search"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:layout_toLeftOf="@id/img_btn_search"
+        android:layout_toStartOf="@id/img_btn_search"
+
+        android:textAlignment="viewStart"
+        android:layout_gravity="start"
+        />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:id="@+id/img_btn_search"
+        android:src="@drawable/ic_search_white_medium"
+        />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/container"
+        android:layout_marginTop="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/recyclerview">
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="Load More"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/btn_load_more"
+            android:visibility="gone"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="3dp"/></FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:id="@+id/msg_container"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_notfound"
+            android:id="@+id/img_message"/>
+
+        <TextView
+            android:id="@+id/txt_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Gig Finder</string>
+
+    <!-- Keys -->
+    <string name="facebook_app_id">716769812420606</string>
+    <string name="fb_login_protocol_scheme">fb716769812420606</string>
+<!--    Enter Your google_maps_API_key here-->
+    <string name="google_maps_API_key">AIzaSyAsYFY3PjcPAhNvUjTNyK9FRtOtTBGt7kg</string>
+<!--    Enter Your google_places_API_key here-->
+    <string name="google_places_API_key">AIzaSyAsYFY3PjcPAhNvUjTNyK9FRtOtTBGt7kg</string>
+<!--    Enter Your google_api_credentials_for_youtube here-->
+    <string name="google_api_credentials_for_youtube">AIzaSyAsYFY3PjcPAhNvUjTNyK9FRtOtTBGt7kg</string>
+    <!-- Keys -->
+
+    <string name="loading_text">Loading....</string>
+    <string name="singup">Sign up</string>
+    <string name="signin">Sign in</string>
+    <string name="createaccount">Create a new account</string>
+    <string name="LoginYourAccount">Login Your Account</string>
+    <string name="ForogotPassword">ForgotPassword</string>
+
+    <string name="openDrawer">open</string>
+    <string name="closeDrawer">close</string>
+
+    <string name="job_result">100 Result</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading">loading</string>
+    <string name="sh_linkedin_progress_dialog_message">Please wait! This may take a moment.</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="update_msg1">Do you want to update launcher app?</string>
+    <string name="update_msg2">Do you want to update gallery app?</string>
+    <string name="update_title">Update</string>
+    <string name="update_ok">OK</string>
+    <string name="update_close">Close</string>
+</resources>

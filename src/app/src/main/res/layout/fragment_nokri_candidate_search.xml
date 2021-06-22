@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/light_grey"
+    tools:context=".guest.search.fragments.Nokri_CandidateSearchFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/progress"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_search_by_title"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="11sp"
+                    android:maxLines="1"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:layout_below="@+id/txt_search_by_title"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="start"
+
+                    android:layout_toLeftOf="@+id/img_btn_search"
+                    android:layout_toStartOf="@+id/img_btn_search"
+                    android:id="@+id/edittxt_search"
+                    android:padding="15dp"
+                    />
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_search_by_title"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/img_btn_search"
+                    android:src="@drawable/ic_search_white_medium"
+                    />
+            </RelativeLayout>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_type"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:id="@+id/spinner_type">
+
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_avail"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:id="@+id/spinner_avail">
+
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+            <!-- Country City State -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_country"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:id="@+id/spinner_country"></Spinner>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/state_container"
+                android:visibility="gone" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+
+                    android:id="@+id/txt_state"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:id="@+id/spinner_state">
+
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/city_container"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+
+                    android:id="@+id/txt_city"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:visibility="gone"
+
+                    android:id="@+id/spinner_city">
+
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/town_container"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+
+                    android:id="@+id/txt_town"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+
+                    android:theme="@style/ThemeSpinnerBlue"
+                    android:id="@+id/spinner_town">
+
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Country City State end -->
+
+
+
+
+
+
+
+        </LinearLayout></android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/search_now"
+        android:layout_marginTop="5dp"
+        android:background="@color/app_blue"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/footer_text"
+
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <com.wakeapp.gigsfinder.custom.MaterialProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:duration="2000"
+        android:layout_above="@+id/search_now"
+        app:progressColour="@color/app_blue"
+        app:backgroundColour="@color/white">
+
+    </com.wakeapp.gigsfinder.custom.MaterialProgressBar>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/app_blue</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">
+            shortEdges
+        </item>
+    </style>
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ThemeSpinnerBlue">
+        <!-- Color when pressed -->
+        <item name="colorAccent">@color/black</item>
+        <!-- Default color for the dropdown arrow and line -->
+
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+    <style name="ThemeEditprofile">
+        <!-- Color when pressed -->
+        <item name="colorAccent">@color/grey_500</item>
+        <!-- Default color for the dropdown arrow and line -->
+
+        <item name="colorControlNormal">@color/light_grey_result</item>
+    </style>
+    <style name="editText">
+        <item name="colorAccent">@color/black</item>
+    </style>
+    <style name="ThemeSpinnerGrey">
+        <!-- Color when pressed -->
+        <item name="colorAccent">@color/light_grey_result</item>
+        <!-- Default color for the dropdown arrow and line -->
+
+        <item name="colorControlNormal">@color/grey</item>
+    </style>
+
+
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:selectableItemBackground">@color/app_blue</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="customDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/customDialogAnimation</item>
+    </style>
+
+    <style name="customDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/right_enter</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+    <style name="AppTabLayouProfile" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/background_color</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="android:textSize">200sp</item>
+        <item name="tabPaddingStart">1dp</item>
+        <item name="tabPaddingEnd">1dp</item>
+
+        <item name="tabSelectedTextColor">@color/background_color</item>
+    </style>
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@color/edit_profile_grey</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/app_blue</item> <!-- activated color change as you wish -->
+
+    </style>
+
+    <style name="PopupTheme" parent="@style/AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+    <style name="BackGroundImageView">
+        <item name="android:alpha">2.0</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/bg_opacity</item>
+    </style>
+</resources>

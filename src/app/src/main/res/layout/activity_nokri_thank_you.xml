@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".employeer.payment.activities.Nokri_ThankYouActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:background="@drawable/ic_clear_30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/close"
+            android:layout_marginTop="0dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logoThankyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@+id/imageLogo"
+            android:padding="10dp">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+            <WebView
+                android:id="@+id/webview"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_greyish" />
+
+
+            <!--    <WebView-->
+            <!--    android:layout_width="match_parent"-->
+            <!--    android:layout_height="wrap_content"-->
+            <!--    android:layout_centerInParent="true"-->
+            <!--    android:id="@+id/webview"></WebView>-->
+
+            <Button
+                android:id="@+id/contineBuyPackage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:text=""
+                android:textColor="@color/background_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

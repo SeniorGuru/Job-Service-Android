@@ -1,0 +1,308 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.wakeapp.gigsfinder.candidate.edit.fragments.Nokri_LocationAndAddressFragment">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:id="@+id/container1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_gravity="left|start"
+                        android:id="@+id/txt_location_and_address"
+                        android:visibility="invisible"
+                        android:textColor="@color/edit_profile_grey"
+                        android:textSize="@dimen/edit_textview_size"
+                        />
+
+
+
+
+
+
+
+
+                    <!--- Country City State Town-->
+
+
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|left"
+                        android:layout_marginTop="@dimen/edit_margin_top"
+                        android:id="@+id/txt_select_country"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/light_grey"></View>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|left"
+                        android:layout_marginTop="@dimen/edit_margin_top"
+                        android:id="@+id/txt_country"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/edit_text_size"
+
+                        android:id="@+id/spinner_country"
+                        android:layout_marginTop="3dp"
+
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:theme="@style/ThemeSpinnerBlue"></Spinner>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|left"
+                        android:layout_marginTop="@dimen/edit_margin_top"
+                        android:id="@+id/txt_state"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/edit_text_size"
+
+                        android:id="@+id/spinner_state"
+                        android:layout_marginTop="3dp"
+
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:theme="@style/ThemeSpinnerBlue"></Spinner>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|left"
+                        android:layout_marginTop="@dimen/edit_margin_top"
+                        android:id="@+id/txt_city"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/edit_text_size"
+
+                        android:id="@+id/spinner_city"
+                        android:layout_marginTop="3dp"
+
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:theme="@style/ThemeSpinnerBlue"></Spinner>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|left"
+                        android:layout_marginTop="@dimen/edit_margin_top"
+                        android:id="@+id/txt_town"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/edit_text_size"
+
+                        android:id="@+id/spinner_town"
+                        android:layout_marginTop="3dp"
+
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:theme="@style/ThemeSpinnerBlue"></Spinner>
+
+
+
+
+
+                    <!-- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_set_location"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|left"
+                        android:layout_marginTop="@dimen/edit_margin_top"
+
+                       />
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/edit_text_size"
+                        android:textColor="@color/black"
+                        android:textAlignment="viewStart"
+                        android:layout_gravity="start"
+
+                        android:theme="@style/ThemeSpinnerBlue"
+
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"
+                        android:layout_marginTop="5dp"></View>
+
+
+
+                    <com.google.android.gms.maps.MapView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/map_fragment"
+                        ></com.google.android.gms.maps.MapView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/edit_margin_top"
+                    android:layout_weight="2">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginStart="2dp"
+                        android:id="@+id/txt_latitude"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_textview_size"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/txt_longitude"
+
+                        android:layout_weight="1"
+                        />
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_weight="2">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:textAlignment="viewStart"
+                        android:layout_gravity="start"
+
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ThemeSpinnerBlue"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_text_size"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:id="@+id/edittxt_latitude"
+
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:layout_gravity="start"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_text_size"
+                        android:editable="false"
+                        android:id="@+id/edittxt_longitude"
+                        android:theme="@style/ThemeSpinnerBlue"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:drawableRight="@drawable/forward_arrow"
+                    android:id="@+id/btn_savelocations"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/edit_text_size"
+                    android:padding="10dp"
+                    android:textColor="@color/app_blue"
+                    android:background="@drawable/rounded_button_with_border"
+                    android:layout_height="@dimen/edit_button_height" />
+            </LinearLayout>
+        </ScrollView>
+    <com.wakeapp.gigsfinder.custom.MaterialProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:duration="2000"
+        android:layout_alignParentBottom="true"
+        app:progressColour="@color/app_blue"
+        app:backgroundColour="@color/white">
+
+    </com.wakeapp.gigsfinder.custom.MaterialProgressBar>
+</RelativeLayout>

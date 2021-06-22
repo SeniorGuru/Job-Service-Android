@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wakeapp.gigsfinder.unused_assets.fragments.Nokri_AboutUsFragment">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:padding="10dp">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/txt_about_us"
+         android:text="About Us:"
+         android:textColor="@color/black"
+         android:textStyle="bold"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txt_about_us"
+      android:layout_marginTop="15dp"
+      android:textColor="@color/grey"
+      android:id="@+id/txt_about_us_data"/>
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txt_about_us_data"
+    android:id="@+id/recyclerview"
+    android:layout_marginTop="10dp">
+
+</android.support.v7.widget.RecyclerView>
+ </RelativeLayout>
+
+</ScrollView>

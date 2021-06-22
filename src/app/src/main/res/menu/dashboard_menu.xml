@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="" />
+    <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_nav_dashboard"
+            android:title="" />
+</group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_editprofile"
+            android:icon="@drawable/ic_nav_edit"
+        android:title="" /></group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_fullprofile"
+            android:icon="@drawable/ic_nav_profile"
+            android:visible="false"
+            android:title="" /></group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_all_jobs"
+            android:icon="@drawable/ic_nav_job"
+            android:title=""></item>
+    <item
+        android:id="@+id/nav_package_details"
+        android:title=""
+        android:icon="@drawable/ic_nav_package_details"
+        />
+    <item
+        android:id="@+id/nav_buy_package"
+        android:title=""
+        android:icon="@drawable/ic_nav_package_buy"
+        />
+    </group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_job_applied"
+            android:icon="@drawable/applied"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_saved_jobs"
+            android:icon="@drawable/ic_nav_save"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_blog"
+            android:title=""
+            android:icon="@drawable/ic_nav_blog" />
+    </group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_nav_logout"
+            android:title="" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_nav_register"
+            android:title="" />
+    </group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_nav_exit"
+            android:title="" />
+    </group>
+
+
+
+</menu>

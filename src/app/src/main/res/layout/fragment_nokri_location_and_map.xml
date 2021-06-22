@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    tools:context="com.wakeapp.gigsfinder.employeer.edit.fragments.Nokri_LocationAndMapFragment">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:id="@+id/container1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:id="@+id/txt_set_location"
+                            android:layout_marginTop="@dimen/edit_margin_top"
+                            android:layout_gravity="start|left"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edit_textview_size"
+                            android:textStyle="bold"
+                           />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/edit_text_size"
+                            android:id="@+id/spinner_country"
+                            android:layout_marginTop="3dp"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:theme="@style/ThemeSpinnerBlue"></Spinner>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="@dimen/edit_button_height"
+                        android:drawableRight="@drawable/forward_arrow"
+                        android:padding="10dp"
+                        android:id="@+id/btn_savelocations"
+                        android:textAllCaps="false"
+                        android:textColor="@color/app_blue"
+                        android:textSize="@dimen/edit_text_size"
+                        android:background="@drawable/rounded_button_with_border"
+                        />
+                </LinearLayout>
+            </ScrollView>
+
+</RelativeLayout>
